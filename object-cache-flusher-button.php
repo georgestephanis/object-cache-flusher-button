@@ -40,7 +40,7 @@ function object_cache_flusher_button_do_it() {
 
 	if ( ! check_admin_referer( 'object-cache-flush' ) ) {
 		return;
-	
+	}
 
 	if ( ! current_user_can( 'manage_options' ) ) {
 		return;
