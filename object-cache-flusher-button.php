@@ -10,8 +10,8 @@
 
 if ( is_admin() ) :
 
-add_action( 'admin_bar_menu', 'nuke_spin_deactivate_reminder' );
-function nuke_spin_deactivate_reminder( $wp_admin_bar ) {
+add_action( 'admin_bar_menu', 'object_cache_flusher_button' );
+function object_cache_flusher_button( $wp_admin_bar ) {
 	if ( ! current_user_can( 'manage_options' ) ) {
 		return;
 	}
